@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./font/aeroport/stylesheet.css">
     <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
@@ -16,49 +19,48 @@
     <header class="header">
         <div class="container">
             <div class="header__main">
-                <div class="header__main">
-                    <a href="#" class="header__main__logo">
-                        <div class="header__main__logo__image">
-                            <img src="/img/logo1.png" alt="img">
-                        </div>
-                        <div class="header__main__logo__title">
-                            <span>Официальный сайт</span>
-                            <h2>ВЫСШИЙ СУДЕЙСКИЙ СОВЕТ
-                                РЕСПУБЛИКИ УЗБЕКИСТАН</h2>
-                        </div>
 
+                <a href="#" class="header__main__logo">
+                    <div class="header__main__logo__image">
+                        <img src="/img/logo1.png" alt="img">
+                    </div>
+                    <div class="header__main__logo__title">
+                        <span>Официальный сайт</span>
+                        <h2>ВЫСШИЙ СУДЕЙСКИЙ СОВЕТ
+                            РЕСПУБЛИКИ УЗБЕКИСТАН</h2>
+                    </div>
+
+
+                </a>
+                <div class="header__main__version">
+                    <a href="#">
+                        <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span>Версия для слабовидящих</span>
+                    </a>
+                    <a href="#">
+                        <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                        <span>Мобильная весия</span>
 
                     </a>
-                    <div class="header__main__version">
-                        <a href="#">
-                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
-                            <span>Версия для слабовидящих</span>
-                        </a>
-                        <a href="#">
-                            <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
-                            <span>Мобильная весия</span>
-
-                        </a>
-
-                    </div>
-                    <div class="header__main__search">
-                        <span><i class="fa fa-search" aria-hidden="true"></i></span>
-                        <input type="text" placeholder="Поиск">
-                    </div>
-                    <div class="header__main__phone">
-                        <a href="#">
-                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                            <span>71 215-73-08</span>
-                        </a>
-                    </div>
-                    <div class="header__main__lang">
-                        <span><i class="fa fa-globe" aria-hidden="true"></i></span>
-                        <a href="#">Ўзб</a>
-                        <a href="#">Рус </a>
-                        <a href="#">Eng</a>
-                    </div>
 
                 </div>
+                <div class="header__main__search">
+                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <div class="header__main__phone">
+                    <a href="#">
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span>71 215-73-08</span>
+                    </a>
+                </div>
+                <div class="header__main__lang">
+                    <span><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <a href="#">Ўзб</a>
+                    <a href="#">Рус </a>
+                    <a href="#">Eng</a>
+                </div>
+
             </div>
 
         </div>
@@ -137,168 +139,476 @@
                     <h2>Пресс-служба</h2>
                 </div>
                 <div class="service__main__menu">
-                    <ul>
-                        <li>
-                            <a href="#">Новости</a>
+                    <ul class="nav nav-tabs " id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Новости</button>
                         </li>
-                        <li>
-                            <a href="#">События</a>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">События</button>
                         </li>
-                        <li>
-                            <a href="#">Новости отрасли</a>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Новости
+                                отрасли</button>
                         </li>
-                        <li>
-                            <a href="#">Объявления</a>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact"
+                                aria-selected="false">Объявления</button>
                         </li>
-                        <li>
-                            <a href="#">Публикации</a>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact"
+                                aria-selected="false">Публикации</button>
                         </li>
-
                     </ul>
                     <a href="#">
                         Все новости <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
                     </a>
                 </div>
-                <div class="service__main__news">
-                    <div class="service__main__news__first">
-                        <div class="service__main__news__first__img">
-                            <img src="./img/news1.png" alt="img">
-                        </div>
-                        <div class="service__main__news__first__title">
-                            <h4>Исследовательским центром изучения
-                                проблем правосудия при Высшем
-                                судейском совете совместно с Респуб...</h4>
-                        </div>
-                        <div class="service__main__news__first__text">
-                            <p>
-                                13 декабря 2018 года Исследовательский центр
-                                при Высшем судейском совете совместно с
-                                Республиканским центром судебной эксперти...
-                            </p>
-                        </div>
-                        <div class="service__main__news__first__icons">
-                            <span class="service__main__news__first__icons__date">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                01 марта 2021
-                            </span>
-                            <span class="service__main__news__first__icons__time">12:30</span>
-                            <span class="service__main__news__first__icons__views"><i class="fa fa-eye"
-                                    aria-hidden="true"></i>147</span>
-                        </div>
-
-
-                    </div>
-                    <div class="service__main__news__second">
-                        <div class="service__main__news__second__row">
-                            <div class="service__main__news__second__row__image">
-                                <img src="/img/news2.png" alt="img">
-                            </div>
-                            <div class="service__main__news__second__row__info">
-                                <a href="#">Состоялось очередное заседание Высшего
-                                    судейского совета</a>
-                                <div class="service__main__news__second__row__info__icons">
-                                    <span class="service__main__news__second__row__info__icons__date">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="service__main__news">
+                            <div class="service__main__news__first">
+                                <div class="service__main__news__first__img">
+                                    <img src="./img/news1.png" alt="img">
+                                </div>
+                                <div class="service__main__news__first__title">
+                                    <h4>Исследовательским центром изучения
+                                        проблем правосудия при Высшем
+                                        судейском совете совместно с Респуб...</h4>
+                                </div>
+                                <div class="service__main__news__first__text">
+                                    <p>
+                                        13 декабря 2018 года Исследовательский центр
+                                        при Высшем судейском совете совместно с
+                                        Республиканским центром судебной эксперти...
+                                    </p>
+                                </div>
+                                <div class="service__main__news__first__icons">
+                                    <span class="service__main__news__first__icons__date">
                                         <i class="fa fa-calendar" aria-hidden="true"></i>
                                         01 марта 2021
                                     </span>
-                                    <span class="service__main__news__second__row__info__icons__time">13:28</span>
-                                    <span class="service__main__news__second__row__info__icons__views"><i
-                                            class="fa fa-eye" aria-hidden="true"></i>175</span>
+                                    <span class="service__main__news__first__icons__time">12:30</span>
+                                    <span class="service__main__news__first__icons__views"><i class="fa fa-eye"
+                                            aria-hidden="true"></i>147</span>
+                                </div>
 
+
+                            </div>
+                            <div class="service__main__news__second">
+                                <div class="service__main__news__second__row">
+                                    <div class="service__main__news__second__row__image">
+                                        <img src="/img/news2.png" alt="img">
+                                    </div>
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялось очередное заседание Высшего
+                                            судейского совета</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                01 марта 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">13:28</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>175</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row ">
+                                    <div class="service__main__news__second__row__image">
+                                        <img src="/img/news3.png" alt="img">
+                                    </div>
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялось совместное заседание Высшего
+                                            судейского совета и Высшей
+                                            квалификационной коллегии судей</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                28 февраля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">10:30</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>186</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row no-image">
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялась встреча с делегацией Министерства юстиции
+                                            Японии</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                24 февраля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">17:32</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>256</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row no-image">
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Тренинг для тренеров по теме «Проведение допроса
+                                            несовершеннолетних потерпевших и свидетелей преступлений»</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                18 фераля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">12:30</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>268</span>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="service__main__news__second__row ">
-                            <div class="service__main__news__second__row__image">
-                                <img src="/img/news3.png" alt="img">
-                            </div>
-                            <div class="service__main__news__second__row__info">
-                                <a href="#">Состоялось совместное заседание Высшего
-                                    судейского совета и Высшей
-                                    квалификационной коллегии судей</a>
-                                <div class="service__main__news__second__row__info__icons">
-                                    <span class="service__main__news__second__row__info__icons__date">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        28 февраля 2021
-                                    </span>
-                                    <span class="service__main__news__second__row__info__icons__time">10:30</span>
-                                    <span class="service__main__news__second__row__info__icons__views"><i
-                                            class="fa fa-eye" aria-hidden="true"></i>186</span>
-
+                            <div class="service__main__news__cards">
+                                <div class="service__main__news__cards__card1">
+                                    <h3>Телефон доверия</h3>
+                                    <p>У Вас есть заявления, жалобы
+                                        или предложения? Обращайтесь
+                                        по телефону доверия в Высший
+                                        судейский совет</p>
+                                    <a href="#">71 200-26-00 или 1190</a>
+                                    <div class="service__main__news__cards__card1__img">
+                                        <img src="./img/news-gerb.png" alt="gerb">
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="service__main__news__second__row no-image">
-                            <div class="service__main__news__second__row__info">
-                                <a href="#">Состоялась встреча с делегацией Министерства юстиции
-                                    Японии</a>
-                                <div class="service__main__news__second__row__info__icons">
-                                    <span class="service__main__news__second__row__info__icons__date">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        24 февраля 2021
-                                    </span>
-                                    <span class="service__main__news__second__row__info__icons__time">17:32</span>
-                                    <span class="service__main__news__second__row__info__icons__views"><i
-                                            class="fa fa-eye" aria-hidden="true"></i>256</span>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service__main__news__second__row no-image">
-                            <div class="service__main__news__second__row__info">
-                                <a href="#">Тренинг для тренеров по теме «Проведение допроса
-                                    несовершеннолетних потерпевших и свидетелей преступлений»</a>
-                                <div class="service__main__news__second__row__info__icons">
-                                    <span class="service__main__news__second__row__info__icons__date">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        18 фераля 2021
-                                    </span>
-                                    <span class="service__main__news__second__row__info__icons__time">12:30</span>
-                                    <span class="service__main__news__second__row__info__icons__views"><i
-                                            class="fa fa-eye" aria-hidden="true"></i>268</span>
+                                <div class="service__main__news__cards__card2">
+                                    <h3>Опрос пользователей</h3>
+                                    <p>Как вы оцениваете
+                                        информативность сайта? </p>
+                                    <form accept="#" class="service__main__news__cards__card2__form">
+                                        <div> <input type="radio" id="radio1" name="radio">
+                                            <label for="radio1">Очень информативно</label>
+                                        </div>
+                                        <div><input type="radio" id="radio2" name="radio">
+                                            <label for="radio2">Достаточно полезно</label>
+                                        </div>
+                                        <div> <input type="radio" id="radio3" name="radio">
+                                            <label for="radio3">Мало полезной информации</label>
+                                        </div>
+                                        <div><input type="radio" id="radio4" name="radio">
+                                            <label for="radio4">Не информативно</label>
+                                        </div>
+                                        <div>
+                                            <button class="btn round btn-primary">Голосовать</button>
+                                            <button class="btn round btn-secondary">Результаты</button>
+                                        </div>
+                                    </form>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="service__main__news__cards">
-                        <div class="service__main__news__cards__card1">
-                            <h3>Телефон доверия</h3>
-                            <p>У Вас есть заявления, жалобы
-                                или предложения? Обращайтесь
-                                по телефону доверия в Высший
-                                судейский совет</p>
-                            <a href="#">71 200-26-00 или 1190</a>
-                            <div class="service__main__news__cards__card1__img">
-                                <img src="./img/news-gerb.png" alt="gerb">
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="service__main__news">
+                            <div class="service__main__news__first">
+                                <div class="service__main__news__first__img">
+                                    <img src="./img/news1.png" alt="img">
+                                </div>
+                                <div class="service__main__news__first__title">
+                                    <h4>Исследовательским центром изучения
+                                        проблем правосудия при Высшем
+                                        судейском совете совместно с Респуб...</h4>
+                                </div>
+                                <div class="service__main__news__first__text">
+                                    <p>
+                                        13 декабря 2018 года Исследовательский центр
+                                        при Высшем судейском совете совместно с
+                                        Республиканским центром судебной эксперти...
+                                    </p>
+                                </div>
+                                <div class="service__main__news__first__icons">
+                                    <span class="service__main__news__first__icons__date">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        01 марта 2021
+                                    </span>
+                                    <span class="service__main__news__first__icons__time">12:30</span>
+                                    <span class="service__main__news__first__icons__views"><i class="fa fa-eye"
+                                            aria-hidden="true"></i>147</span>
+                                </div>
+
+
+                            </div>
+                            <div class="service__main__news__second">
+                                <div class="service__main__news__second__row">
+                                    <div class="service__main__news__second__row__image">
+                                        <img src="/img/news2.png" alt="img">
+                                    </div>
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялось очередное заседание Высшего
+                                            судейского совета</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                01 марта 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">13:28</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>175</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row ">
+                                    <div class="service__main__news__second__row__image">
+                                        <img src="/img/news3.png" alt="img">
+                                    </div>
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялось совместное заседание Высшего
+                                            судейского совета и Высшей
+                                            квалификационной коллегии судей</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                28 февраля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">10:30</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>186</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row no-image">
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялась встреча с делегацией Министерства юстиции
+                                            Японии</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                24 февраля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">17:32</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>256</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row no-image">
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Тренинг для тренеров по теме «Проведение допроса
+                                            несовершеннолетних потерпевших и свидетелей преступлений»</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                18 фераля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">12:30</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>268</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__main__news__cards">
+                                <div class="service__main__news__cards__card1">
+                                    <h3>Телефон доверия</h3>
+                                    <p>У Вас есть заявления, жалобы
+                                        или предложения? Обращайтесь
+                                        по телефону доверия в Высший
+                                        судейский совет</p>
+                                    <a href="#">71 200-26-00 или 1190</a>
+                                    <div class="service__main__news__cards__card1__img">
+                                        <img src="./img/news-gerb.png" alt="gerb">
+                                    </div>
+                                </div>
+                                <div class="service__main__news__cards__card2">
+                                    <h3>Опрос пользователей</h3>
+                                    <p>Как вы оцениваете
+                                        информативность сайта? </p>
+                                    <form accept="#" class="service__main__news__cards__card2__form">
+                                        <div> <input type="radio" id="radio1" name="radio">
+                                            <label for="radio1">Очень информативно</label>
+                                        </div>
+                                        <div><input type="radio" id="radio2" name="radio">
+                                            <label for="radio2">Достаточно полезно</label>
+                                        </div>
+                                        <div> <input type="radio" id="radio3" name="radio">
+                                            <label for="radio3">Мало полезной информации</label>
+                                        </div>
+                                        <div><input type="radio" id="radio4" name="radio">
+                                            <label for="radio4">Не информативно</label>
+                                        </div>
+                                        <div>
+                                            <button class="btn round btn-primary">Голосовать</button>
+                                            <button class="btn round btn-secondary">Результаты</button>
+                                        </div>
+                                    </form>
+
+                                </div>
                             </div>
                         </div>
-                        <div class="service__main__news__cards__card2">
-                            <h3>Опрос пользователей</h3>
-                            <p>Как вы оцениваете
-                                информативность сайта? </p>
-                            <form accept="#" class="service__main__news__cards__card2__form">
-                                <div> <input type="radio" id="radio1" name="radio">
-                                    <label for="radio1">Очень информативно</label>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="service__main__news">
+                            <div class="service__main__news__first">
+                                <div class="service__main__news__first__img">
+                                    <img src="./img/news1.png" alt="img">
                                 </div>
-                                <div><input type="radio" id="radio2" name="radio">
-                                    <label for="radio2">Достаточно полезно</label>
+                                <div class="service__main__news__first__title">
+                                    <h4>Исследовательским центром изучения
+                                        проблем правосудия при Высшем
+                                        судейском совете совместно с Респуб...</h4>
                                 </div>
-                                <div> <input type="radio" id="radio3" name="radio">
-                                    <label for="radio3">Мало полезной информации</label>
+                                <div class="service__main__news__first__text">
+                                    <p>
+                                        13 декабря 2018 года Исследовательский центр
+                                        при Высшем судейском совете совместно с
+                                        Республиканским центром судебной эксперти...
+                                    </p>
                                 </div>
-                                <div><input type="radio" id="radio4" name="radio">
-                                    <label for="radio4">Не информативно</label>
+                                <div class="service__main__news__first__icons">
+                                    <span class="service__main__news__first__icons__date">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        01 марта 2021
+                                    </span>
+                                    <span class="service__main__news__first__icons__time">12:30</span>
+                                    <span class="service__main__news__first__icons__views"><i class="fa fa-eye"
+                                            aria-hidden="true"></i>147</span>
                                 </div>
-                                <div>
-                                    <button class="btn round btn-primary">Голосовать</button>
-                                    <button class="btn round btn-secondary">Результаты</button>
-                                </div>
-                            </form>
 
+
+                            </div>
+                            <div class="service__main__news__second">
+                                <div class="service__main__news__second__row">
+                                    <div class="service__main__news__second__row__image">
+                                        <img src="/img/news2.png" alt="img">
+                                    </div>
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялось очередное заседание Высшего
+                                            судейского совета</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                01 марта 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">13:28</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>175</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row ">
+                                    <div class="service__main__news__second__row__image">
+                                        <img src="/img/news3.png" alt="img">
+                                    </div>
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялось совместное заседание Высшего
+                                            судейского совета и Высшей
+                                            квалификационной коллегии судей</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                28 февраля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">10:30</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>186</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row no-image">
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Состоялась встреча с делегацией Министерства юстиции
+                                            Японии</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                24 февраля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">17:32</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>256</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__main__news__second__row no-image">
+                                    <div class="service__main__news__second__row__info">
+                                        <a href="#">Тренинг для тренеров по теме «Проведение допроса
+                                            несовершеннолетних потерпевших и свидетелей преступлений»</a>
+                                        <div class="service__main__news__second__row__info__icons">
+                                            <span class="service__main__news__second__row__info__icons__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                18 фераля 2021
+                                            </span>
+                                            <span
+                                                class="service__main__news__second__row__info__icons__time">12:30</span>
+                                            <span class="service__main__news__second__row__info__icons__views"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i>268</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__main__news__cards">
+                                <div class="service__main__news__cards__card1">
+                                    <h3>Телефон доверия</h3>
+                                    <p>У Вас есть заявления, жалобы
+                                        или предложения? Обращайтесь
+                                        по телефону доверия в Высший
+                                        судейский совет</p>
+                                    <a href="#">71 200-26-00 или 1190</a>
+                                    <div class="service__main__news__cards__card1__img">
+                                        <img src="./img/news-gerb.png" alt="gerb">
+                                    </div>
+                                </div>
+                                <div class="service__main__news__cards__card2">
+                                    <h3>Опрос пользователей</h3>
+                                    <p>Как вы оцениваете
+                                        информативность сайта? </p>
+                                    <form accept="#" class="service__main__news__cards__card2__form">
+                                        <div> <input type="radio" id="radio1" name="radio">
+                                            <label for="radio1">Очень информативно</label>
+                                        </div>
+                                        <div><input type="radio" id="radio2" name="radio">
+                                            <label for="radio2">Достаточно полезно</label>
+                                        </div>
+                                        <div> <input type="radio" id="radio3" name="radio">
+                                            <label for="radio3">Мало полезной информации</label>
+                                        </div>
+                                        <div><input type="radio" id="radio4" name="radio">
+                                            <label for="radio4">Не информативно</label>
+                                        </div>
+                                        <div>
+                                            <button class="btn round btn-primary">Голосовать</button>
+                                            <button class="btn round btn-secondary">Результаты</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -309,81 +619,208 @@
                     <h2>Деятельность</h2>
                 </div>
                 <div class="activities__main__menu">
-                    <ul>
-                        <li>
-                            <a href="#">О совете</a>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#about"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">О совете</button>
                         </li>
-                        <li>
-                            <a href="#">Отчеты</a>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#report"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Отчеты</button>
                         </li>
-                        <li>
-                            <a href="#">Мероприятия</a>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#events"
+                                type="button" role="tab" aria-controls="contact"
+                                aria-selected="false">Мероприятия</button>
                         </li>
                     </ul>
                     <a href="#">
                         Подробная информация <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
                     </a>
                 </div>
-                <div class="activities__main__wrapper">
-                    <div class="activities__main__wrapper__info">
-                        <p>Высший судейский совет Республики Узбекистан является органом судейского
-                            сообщества и оказывает содействие в обеспечении соблюдения
-                            конституционного принципа независимости судебной власти в Республике
-                            Узбекистан. Совет осуществляет свою деятельность открыто, во
-                            взаимодействии с государственными органами, органами самоуправления
-                            граждан, другими организациями и гражданами, а также со средствами
-                            массовой информации.</p>
-                        <span>
-                            ЗАКОН РЕСПУБЛИКИ УЗБЕКИСТАН
-                            О ВЫСШЕМ СУДЕЙСКОМ СОВЕТЕ РЕСПУБЛИКИ
-                           УЗБЕКИСТАН № ЗРУ-427 ОТ 6 АПРЕЛЯ 2017 Г.
-                        </span>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab"> <div class="activities__main__wrapper">
+                        <div class="activities__main__wrapper__info">
+                            <p>Высший судейский совет Республики Узбекистан является органом судейского
+                                сообщества и оказывает содействие в обеспечении соблюдения
+                                конституционного принципа независимости судебной власти в Республике
+                                Узбекистан. Совет осуществляет свою деятельность открыто, во
+                                взаимодействии с государственными органами, органами самоуправления
+                                граждан, другими организациями и гражданами, а также со средствами
+                                массовой информации.</p>
+                            <span>
+                                ЗАКОН РЕСПУБЛИКИ УЗБЕКИСТАН
+                                О ВЫСШЕМ СУДЕЙСКОМ СОВЕТЕ РЕСПУБЛИКИ
+                                УЗБЕКИСТАН № ЗРУ-427 ОТ 6 АПРЕЛЯ 2017 Г.
+                            </span>
+                        </div>
+                        <div class="activities__main__wrapper__image">
+                            <div class="activities__main__wrapper__image__img1"><img src="./img/activities1.png" alt="img">
+                            </div>
+                            <div class="activities__main__wrapper__image__img2"><img src="./img/activities2.png" alt="img">
+                            </div>
+    
+    
+                        </div>
                     </div>
-                    <div class="activities__main__wrapper__image">
-                        <div class="activities__main__wrapper__image__img1"><img src="./img/activities1.png" alt="img">
+                    <ul class="activities__main__submenu">
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities3.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Структура совета
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities4.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Руководство
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities5.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Международное
+                                сотруднечество
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities6.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Государственные
+                                символы
+                            </div>
+                        </li>
+                    </ul></div>
+                    <div class="tab-pane fade" id="report" role="tabpanel" aria-labelledby="profile-tab"> <div class="activities__main__wrapper">
+                        <div class="activities__main__wrapper__info">
+                            <p>Высший судейский совет Республики Узбекистан является органом судейского
+                                сообщества и оказывает содействие в обеспечении соблюдения
+                                конституционного принципа независимости судебной власти в Республике
+                                Узбекистан. Совет осуществляет свою деятельность открыто, во
+                                взаимодействии с государственными органами, органами самоуправления
+                                граждан, другими организациями и гражданами, а также со средствами
+                                массовой информации.</p>
+                            <span>
+                                ЗАКОН РЕСПУБЛИКИ УЗБЕКИСТАН
+                                О ВЫСШЕМ СУДЕЙСКОМ СОВЕТЕ РЕСПУБЛИКИ
+                                УЗБЕКИСТАН № ЗРУ-427 ОТ 6 АПРЕЛЯ 2017 Г.
+                            </span>
                         </div>
-                        <div class="activities__main__wrapper__image__img2"><img src="./img/activities2.png" alt="img">
+                        <div class="activities__main__wrapper__image">
+                            <div class="activities__main__wrapper__image__img1"><img src="./img/activities1.png" alt="img">
+                            </div>
+                            <div class="activities__main__wrapper__image__img2"><img src="./img/activities2.png" alt="img">
+                            </div>
+    
+    
                         </div>
-
-
                     </div>
-                </div>
-                <ul class="activities__main__submenu">
-                    <li>
-                        <div class="activities__main__submenu__logo">
-                            <img src="./img/activities3.png" alt="img">
+                    <ul class="activities__main__submenu">
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities3.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Структура совета
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities4.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Руководство
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities5.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Международное
+                                сотруднечество
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities6.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Государственные
+                                символы
+                            </div>
+                        </li>
+                    </ul></div>
+                    <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="contact-tab"> <div class="activities__main__wrapper">
+                        <div class="activities__main__wrapper__info">
+                            <p>Высший судейский совет Республики Узбекистан является органом судейского
+                                сообщества и оказывает содействие в обеспечении соблюдения
+                                конституционного принципа независимости судебной власти в Республике
+                                Узбекистан. Совет осуществляет свою деятельность открыто, во
+                                взаимодействии с государственными органами, органами самоуправления
+                                граждан, другими организациями и гражданами, а также со средствами
+                                массовой информации.</p>
+                            <span>
+                                ЗАКОН РЕСПУБЛИКИ УЗБЕКИСТАН
+                                О ВЫСШЕМ СУДЕЙСКОМ СОВЕТЕ РЕСПУБЛИКИ
+                                УЗБЕКИСТАН № ЗРУ-427 ОТ 6 АПРЕЛЯ 2017 Г.
+                            </span>
                         </div>
-                        <div class="activities__main__submenu__title">
-                            Структура совета
+                        <div class="activities__main__wrapper__image">
+                            <div class="activities__main__wrapper__image__img1"><img src="./img/activities1.png" alt="img">
+                            </div>
+                            <div class="activities__main__wrapper__image__img2"><img src="./img/activities2.png" alt="img">
+                            </div>
+    
+    
                         </div>
-                    </li>
-                    <li>
-                        <div class="activities__main__submenu__logo">
-                            <img src="./img/activities4.png" alt="img">
-                        </div>
-                        <div class="activities__main__submenu__title">
-                            Руководство
-                        </div>
-                    </li>
-                    <li>
-                        <div class="activities__main__submenu__logo">
-                            <img src="./img/activities5.png" alt="img">
-                        </div>
-                        <div class="activities__main__submenu__title">
-                            Международное
-                            сотруднечество
-                        </div>
-                    </li>
-                    <li>
-                        <div class="activities__main__submenu__logo">
-                            <img src="./img/activities6.png" alt="img">
-                        </div>
-                        <div class="activities__main__submenu__title">
-                            Государственные
-                            символы
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                    <ul class="activities__main__submenu">
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities3.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Структура совета
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities4.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Руководство
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities5.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Международное
+                                сотруднечество
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activities__main__submenu__logo">
+                                <img src="./img/activities6.png" alt="img">
+                            </div>
+                            <div class="activities__main__submenu__title">
+                                Государственные
+                                символы
+                            </div>
+                        </li>
+                    </ul></div>
+                  </div>
+               
             </div>
         </div>
 
@@ -403,10 +840,10 @@
                             <a href="#">Информация о сотрудничестве Исследовательского
                                 центра изучения проблем правосудия при Высшем
                                 судейском совете с зарубежными организациями...</a>
-                                <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    Дата проведения: 19 апреля 2021
-                                </span>
+                            <span>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                Дата проведения: 19 апреля 2021
+                            </span>
                         </div>
 
                     </div>
@@ -418,10 +855,10 @@
                             <a href="#">Информация о соглашениях (меморандумах),
                                 подписанных между Исследовательским центром
                                 при Высшем судейском совете и представительст...</a>
-                                <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    Дата проведения: 28 мпрта 2021
-                                </span>
+                            <span>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                Дата проведения: 28 мпрта 2021
+                            </span>
                         </div>
 
                     </div>
@@ -433,10 +870,10 @@
                             <a href="#">Информация о соглашениях (меморандумах),
                                 подписанных между Исследовательским центром
                                 при Высшем судейском совете и представительст...</a>
-                                <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    Дата проведения: 15 апреля 2021
-                                </span>
+                            <span>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                Дата проведения: 15 апреля 2021
+                            </span>
                         </div>
 
                     </div>
@@ -448,10 +885,10 @@
                             <a href="#">Информация о сотрудничестве Исследовательского
                                 центра изучения проблем правосудия при Высшем
                                 судейском совете с зарубежными организациями...</a>
-                                <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    Дата проведения: 21 марта 2021
-                                </span>
+                            <span>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                Дата проведения: 21 марта 2021
+                            </span>
                         </div>
 
                     </div>
@@ -459,7 +896,282 @@
             </div>
         </div>
     </section>
+    <section class="vacancy">
+        <div class="container">
+            <div class="vacancy__main">
+                <div class="vacancy__m  ain__title title">
+                    <h2>Вакансии судей по Узбекистану</h2>
+                </div>
+                <div class="vacancy__main__wrapper">
+                    <div class="vacancy__main__wrapper__image">
+                        <img src="./img/karta.png" alt="karta">
+                    </div>
+                    <div class="vacancy__main__wrapper__card">
+                        <div class="vacancy__main__wrapper__card__title">
 
+                            <h3> <i class="fa fa-map-marker" aria-hidden="true"></i>Новоинская область</h3>
+                        </div>
+                        <div class="vacancy__main__wrapper__card__info">
+                            <div>
+                                <div>
+                                    <span class="secondary">Судей</span>
+                                    <span class="number">31</span>
+                                </div>
+                                <div>
+                                    <span>Административ. дела</span>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="secondary">Судей</span>
+                                    <span class="number">123</span>
+                                </div>
+                                <div>
+                                    <span>Уголовные дела</span>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="secondary">Судей</span>
+                                    <span class="number">113</span>
+                                </div>
+                                <div>
+                                    <span>Экономические дела</span>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="secondary">Судей</span>
+                                    <span class="number">200</span>
+                                </div>
+                                <div>
+                                    <span>Гражданские дела</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="video">
+        <div class="container">
+            <div class="video__main">
+                <div class="video__main__title title">
+                    <h2>Видео</h2>
+                </div>
+                <a href="#" class="video__main__link">Все видео <span><i class="fa fa-arrow-circle-right"
+                            aria-hidden="true"></i></span> </a>
+                <div class="video__main__wrapper">
+                    <div class="video__main__wrapper__card">
+                        <div class="video__main__wrapper__card__link">
+                            <a href="#"><img src="./img/play.png" alt="play"></a>
+                        </div>
+                        <div class="video__main__wrapper__card__text">
+                            <p> Официальный веб-сайт Президента
+                                Республики Узбекистан</p>
+
+                        </div>
+                    </div>
+                    <div class="video__main__wrapper__card">
+                        <div class="video__main__wrapper__card__link">
+                            <a href="#"><img src="./img/play.png" alt="play"></a>
+                        </div>
+                        <div class="video__main__wrapper__card__text">
+                            <p> Официальный веб-сайт Президента
+                                Республики Узбекистан</p>
+
+                        </div>
+                    </div>
+                    <div class="video__main__wrapper__card">
+                        <div class="video__main__wrapper__card__link">
+                            <a href="#"><img src="./img/play.png" alt="play"></a>
+                        </div>
+                        <div class="video__main__wrapper__card__text">
+                            <p> Официальный веб-сайт Президента
+                                Республики Узбекистан</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="links">
+        <div class="container">
+            <div class="links__main">
+                <div class="links__main__title title">
+                    <h2>Полезные ссылки</h2>
+                </div>
+                <div class="links__main__carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="links__main__carousel__item">
+                            <div class="links__main__carousel__item__top">
+                                <img src="./img/links1.png" alt="img">
+                                <a href="#"><img src="./img/out-links.png" alt="img"></a>
+                            </div>
+                            <div class="links__main__carousel__item__body">
+                                <p>Правительственный портал
+                                    Республики Узбекистан</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="links__main__carousel__item">
+                            <div class="links__main__carousel__item__top">
+                                <img src="./img/links2.png" alt="img">
+                                <a href="#"><img src="./img/out-links.png" alt="img"></a>
+                            </div>
+                            <div class="links__main__carousel__item__body">
+                                <p>Официальный веб-сайт
+                                    Президента Республики
+                                    Узбекистан
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="links__main__carousel__item">
+                            <div class="links__main__carousel__item__top">
+                                <img src="./img/links3.png" alt="img">
+                                <a href="#"><img src="./img/out-links.png" alt="img"></a>
+                            </div>
+                            <div class="links__main__carousel__item__body">
+                                <p>Прокуратура Республики
+                                    Узбекистан
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="links__main__carousel__item">
+                            <div class="links__main__carousel__item__top">
+                                <img src="./img/links4.png" alt="img">
+                                <a href="#"><img src="./img/out-links.png" alt="img"></a>
+                            </div>
+                            <div class="links__main__carousel__item__body">
+                                <p>Министерство Юстиции
+                                    Республики Узбекистан</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="links__main__carousel__item">
+                            <div class="links__main__carousel__item__top">
+                                <img src="./img/links4.png" alt="img">
+                                <a href="#"><img src="./img/out-links.png" alt="img"></a>
+                            </div>
+                            <div class="links__main__carousel__item__body">
+                                <p>Министерство Юстиции
+                                    Республики Узбекистан</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__main__col1">
+                    <div class="footer__main__col1__top">
+                        <ul class="footer__main__col1__menu">
+                            <li><a href="#"> О Совете</a></li>
+                            <li><a href="#"> Законодательство</a></li>
+                            <li><a href="#">Кандидатам</a> </li>
+                            <li><a href="#">Обучение</a> </li>
+                            <li><a href="#"> Подача обращений</a></li>
+                            <li><a href="#">Противодействие коррупции</a> </li>
+                            <li><a href="#"> Пресс-служба</a></li>
+                            <li><a href="#"> Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__main__col1__bottom">
+                        <h4>ВЫСШИЙ СУДЕЙСКИЙ СОВЕТ
+                            РЕСПУБЛИКИ УЗБЕКИСТАН</h4>
+                        <p>© 2021. Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer__main__col2">
+                    <div class="footer__main__col2__top">
+                        <div class="footer__main__col2__top__contact">
+                            <h3 class="footer__main__col2__top__contact__title">
+                                Контактные данные
+                            </h3>
+                            <p>Почта: <a href="#"> info@sudyalaroliykengashi.uz</a></p>
+                            <p>Адрес: <a href="#"> Узбекистан
+                                    Ташкент ул. Авлиё ота, 124</a></p>
+                            <p>Телефон: <a href="#"> 71 215-73-08</a></p>
+                        </div>
+                        <p>"Сайт разработан в рамках совместного проекта
+                            Верховного суда Республики Узбекистан, Агентства
+                            США по международному развитию (USAID) и ПРООН
+                            в Узбекистане "Партнёрство в сфере верховенства
+                            закона в Узбекистане""</p>
+                    </div>
+                    <div class="footer__main__col2__bottom">
+                        <p>При обнаружении ошибки на сайте, выделите
+                            и нажмите Ctrl+Enter для уведомления
+                            администрации</p>
+                        <p>Разработка сайта: <a href="#"> Online Service Group</a></p>
+                    </div>
+
+
+                </div>
+                <div class="footer__main__col3">
+                    <div class="footer__main__col3__top">
+                        <div class="footer__main__col3__top__maps">
+                            <img src="./img/maps.png" alt="maps">
+                        </div>
+                        <div class="footer__main__col3__top__struct">
+                            <img src="./img/struct.png" alt="img">
+                            <span>Карта сайта</span>
+                        </div>
+                        <div class="footer__main__col3__top__icons">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer__main__col3__bottom">
+                        <p>Последнее обновление: 19.04.2021</p>
+                        <p>Количество пользователей: 12</p>
+                        <div class="footer__main__col3__bottom__img">
+                            <img src="./img/footer1.png" alt="img">
+                            <img src="./img/footer2.png" alt="img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./libs/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+    <script>
+        $('.links__main__carousel').owlCarousel({
+            items: 4,
+            loop: true,
+            nav: false,
+            dots: true,
+            navText: ['<i class="fa fa-arrow-left" aria-hidden="true"></i>', '<i class="icon-right2"></i>'],
+            margin: 30
+        })
+    </script>
 </body>
 
 </html>
